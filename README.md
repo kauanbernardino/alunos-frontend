@@ -1,6 +1,6 @@
 # Minha Escola: front-end (React)
 
-Front-end em React para o cadastro de alunos e disciplinas, com telas de login e registro. Consome a API em C# do repositório [WebApplication2](https://github.com/kauanbernardino/WebApplication2).
+Front-end em React para o cadastro de alunos e disciplinas, com telas de login e registro. Consome a API em C# do repositório [alunos-api](https://github.com/kauanbernardino/alunos-api).
 
 ## Funcionalidades
 
@@ -19,8 +19,8 @@ React 19 · React Router · Axios · Bootstrap e Reactstrap · Create React App
 Pré-requisito: Node.js.
 
 ```bash
-git clone https://github.com/kauanbernardino/apicrud.git
-cd apicrud/alunostat1-main
+git clone https://github.com/kauanbernardino/alunos-frontend.git
+cd alunos-frontend/alunostat1-main
 npm install
 npm start
 ```
