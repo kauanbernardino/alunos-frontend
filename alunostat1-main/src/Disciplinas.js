@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import logoCadastro from './assets/cadastro.png';
+import { API_URL } from './config';     
 
 function Disciplinas() {
   
-  const baseUrl = "https://api-escola-hroh.onrender.com/api/Disciplinas";
+  const baseUrl = API_URL + "/api/Disciplinas";
 
   const [data, setData] = useState([]);
   const [modalIncluir, setModalIncluir] = useState(false);

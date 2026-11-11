@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import {API_URL} from './config'; // Importa a variável de ambiente do arquivo config.js
 
 function Login() {
   const [inputUsuario, setInputUsuario] = useState('');
@@ -18,7 +19,7 @@ function Login() {
 
     try {
       // Endereço exato do seu Back-End
-      const url = "https://api-escola-hroh.onrender.com/api/Auth/login";
+      const url = API_URL + "/api/Auth/login";
       const response = await axios.post(url, dadosLogin);
       
       // Se deu certo, salva o token e entra

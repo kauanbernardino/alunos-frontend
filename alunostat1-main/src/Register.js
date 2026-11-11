@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import {API_URL} from './config';
 
 function Register() {
   const [inputUsuario, setInputUsuario] = useState('');
@@ -20,7 +21,7 @@ function Register() {
     };
 
     try {
-      const url = "https://api-escola-hroh.onrender.com/api/Auth/registrar";
+      const url = API_URL + "/api/Auth/registrar";
       await axios.post(url, dadosRegistro);
       
       setSucesso(true);
